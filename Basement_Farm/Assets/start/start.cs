@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class start : MonoBehaviour
 {
-    public void OnClickToGameSceneButton()
+    public void OnClickToCharaTutorialButton()
     {
-        SceneManager.LoadScene("gameScene");
+        SceneManager.LoadScene("Chara Tutorial");
     }
 }

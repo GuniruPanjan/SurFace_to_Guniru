@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/start/startScene.unity
     guid: 96b0da68d8f25d74692303bf549d98cd
   - enabled: 1
+    path: Assets/Chara Tutorial/Chara Tutorial.unity
+    guid: 894dc90070bdbb441a0c2b610e78b352
+  - enabled: 1
+    path: Assets/home/homeScene.unity
+    guid: b4cac36a9552c3f4285c5f6061016237
+  - enabled: 1
     path: Assets/start/gameScene.unity
     guid: 2d35fb39b77fa444e9a5a7c72ed9b57c
   m_configObjects: {}

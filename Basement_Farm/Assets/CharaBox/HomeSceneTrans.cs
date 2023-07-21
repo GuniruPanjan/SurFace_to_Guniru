@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Home : MonoBehaviour
+public class HomeSceneTrans : MonoBehaviour
 {
-   public void OnClickToHomeSceneBotton()
-    { 
+    //ホームシーンへ移行
+    public void OnClickToHomeSceneBotton()
+    {
         SceneManager.LoadScene("HomeScene");
     }
 }
-   

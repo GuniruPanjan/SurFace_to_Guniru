@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ using UnityEngine.UI;
 public class chara1Selection : MonoBehaviour
 {
 
+    public int Chara1 = 0;   //キャラ変数を宣言する
     //UIボタンを非表示にする
     public void Start()
     {
@@ -27,6 +29,8 @@ public class chara1Selection : MonoBehaviour
         Destroy(obj);
         Destroy(obj2);
 
+
+        Chara1 += 1;
 
     }
 

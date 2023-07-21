@@ -6,6 +6,8 @@ public class chara3Selection : MonoBehaviour
 {
     [SerializeField] private GameObject a = GameObject.Find("Canvas");  //GameObject型の変数aを宣言　好きなゲームオブジェクトをアタッチ
 
+    public int Chara3 = 0;  //キャラ変数を宣言する
+
     //UIボタンを非表示にする
     void Start()
     {
@@ -27,5 +29,6 @@ public class chara3Selection : MonoBehaviour
         //UIボタンを表示する
         a.SetActive(true);
 
+        Chara3 += 1;
     }
 }

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;// シーン切り換えに使用するライブラリ
 
 public class upbringing : MonoBehaviour
 {
-   public void OnClickGameSceneButton()
+   public void OnClickchara_evlution_GameSceneButton()
    {
-        SceneManager.LoadScene("gameScene");
+        SceneManager.LoadScene("chara evolution GameScene");
    }
 }

@@ -476,7 +476,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 554945878}
         m_TargetAssemblyTypeName: upbringing, Assembly-CSharp
-        m_MethodName: OnClickGameSceneButton
+        m_MethodName: OnClickchara_evlution_GameSceneButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

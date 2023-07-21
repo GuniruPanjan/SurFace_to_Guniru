@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class chara2Selection : MonoBehaviour
 {
-    [SerializeField] private GameObject a = GameObject.Find("Canvas");  //GameObject型の変数aを宣言　好きなゲームオブジェクトをアタッチ
 
     public int Chara2 = 0;   //キャラ変数を宣言する
 
     //UIボタンを非表示にする
     void Start()
     {
-        a.SetActive(false);
     }
     //オブジェクトクリックで選んだキャラ以外が消失
     public void OnTouched()
@@ -25,9 +23,6 @@ public class chara2Selection : MonoBehaviour
         //選ばれなかったキャラを破壊
         Destroy(obj1);
         Destroy(obj2);
-
-        //UIボタンを表示する
-        a.SetActive(true);
 
         Chara2 += 1;
     }

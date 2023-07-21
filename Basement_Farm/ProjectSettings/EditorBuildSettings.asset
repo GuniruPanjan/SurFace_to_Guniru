@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/upbringing/chara evolution GameScene.unity
     guid: cbb989f2305d5f8478122fdc200c94bc
+  - enabled: 1
+    path: Assets/CharaBox/CharaBox.unity
+    guid: 63b1755ec0003e842a0c2f336cd077ba
   m_configObjects: {}

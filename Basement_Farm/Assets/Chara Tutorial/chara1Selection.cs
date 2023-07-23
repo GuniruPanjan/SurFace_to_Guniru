@@ -5,16 +5,13 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SocialPlatforms.GameCenter;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class chara1Selection : MonoBehaviour
 {
 
-    public int Chara1 = 0;   //キャラ変数を宣言する
-    //UIボタンを非表示にする
-    public void Start()
-    {
-
-    }
+    public static int Chara1 = 0;     //キャラの変数を宣言
 
     //オブジェクトクリックで選んだキャラ以外が消失
     public void OnTouched()
@@ -29,10 +26,13 @@ public class chara1Selection : MonoBehaviour
         Destroy(obj);
         Destroy(obj2);
 
-
         Chara1 += 1;
 
+        
     }
-
-
 }
+
+
+
+
+

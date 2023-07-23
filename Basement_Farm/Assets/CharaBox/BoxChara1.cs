@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
+
+public class BoxChara1 : MonoBehaviour
+{
+
+    [SerializeField] private GameObject a = GameObject.Find("ƒQ[ƒ€1");
+
+    void Update()
+    {
+       
+        if (chara1Selection.Chara1 >= 1) //Chara1‚ª1ˆÈã‚¾‚Á‚½ê‡•\¦
+        {
+
+            a.SetActive(!false);
+
+        }
+        if (chara1Selection.Chara1 == 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
+        {
+            a.SetActive(false);
+        }
+        
+
+    }
+}

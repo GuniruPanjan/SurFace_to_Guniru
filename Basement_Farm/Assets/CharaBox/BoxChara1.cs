@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SocialPlatforms.GameCenter;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
 
 public class BoxChara1 : MonoBehaviour
 {
+
+    public static int UpbringingChara1 = 0;  //育成シーンでCharaを表示させるための変数宣言
+
 
     [SerializeField] private GameObject a = GameObject.Find("ゲーム1");
 
@@ -26,4 +32,11 @@ public class BoxChara1 : MonoBehaviour
         
 
     }
+
+    public void OnTouched()
+    {
+        UpbringingChara1 += 1;
+    }
+
+
 }

@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class charaevolution : MonoBehaviour
 {
+    [SerializeField] private GameObject a1 = GameObject.Find("キャラ1");
+
+
+
+    public static int chara1to2 = 0;    //分岐進化キャラ１の変数宣言
+    public static int chara1to3 = 0;    //分岐進化キャラ２の変数宣言
 
     [SerializeField] private GameObject chara1;
 
     public int standard = 10;        //進化するアイテムの数
-    public int normal = 0;           //進化用のアイテム１
-    public int low = 0;              //進化用のアイテム２
+    public static int normal = 0;           //進化用のアイテム１
+    public static int low = 0;              //進化用のアイテム２
 
     bool evolution = false;          //進化を一度だけ実行する
     bool evolution2 = false;         //分岐進化を一度だけ実行する
@@ -21,6 +28,16 @@ public class charaevolution : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        if(BoxChara1.UpbringingChara1 >= 1)  //１以上だった場合キャラが表示される
+        {
+            a1.SetActive(!false);
+        }
+        if(BoxChara1.UpbringingChara1 == 0)  //0以下だった場合キャラが非表示
+        {
+            a1.SetActive(false);
+        }
+
+
         for(int i = 0;i < standard;i++)
         {
             if (Input.GetKey(KeyCode.A)) //Aキーを入力するとnormalのアイテムが与えられる
@@ -58,6 +75,10 @@ public class charaevolution : MonoBehaviour
                 //GameObject chara2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
                 Instantiate(chara2,new Vector3(0.0f,0.0f,0.0f), Quaternion.identity);
+
+                chara1Selection.Chara1 -= 1;
+
+                chara1to2 += 1;
             }
             
         }
@@ -70,7 +91,11 @@ public class charaevolution : MonoBehaviour
 
                 Destroy(gameObject);
 
-                GameObject chara3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                //GameObject chara3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+
+                chara1Selection.Chara1 -= 1;
+
+                chara1to3 += 1;
                 
             }
         }

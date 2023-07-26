@@ -16,6 +16,11 @@ public class BoxChara1 : MonoBehaviour
 
     [SerializeField] private GameObject a = GameObject.Find("ÉQÅ[ÉÄ1");
 
+    public void OnTouched()
+    {
+        UpbringingChara1 += 1;
+        Debug.Log("ëIÇÒÇæÇ»");
+    }
     void Update()
     {
        
@@ -33,10 +38,7 @@ public class BoxChara1 : MonoBehaviour
 
     }
 
-    public void OnTouched()
-    {
-        UpbringingChara1 += 1;
-    }
+    
 
 
 }

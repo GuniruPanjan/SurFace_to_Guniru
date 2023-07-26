@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SocialPlatforms.GameCenter;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -16,8 +18,8 @@ public class charaevolution : MonoBehaviour
     [SerializeField] private GameObject chara1;
 
     public int standard = 10;        //進化するアイテムの数
-    public static int normal = 0;           //進化用のアイテム１
-    public static int low = 0;              //進化用のアイテム２
+    public int normal = 0;           //進化用のアイテム１
+    public int low = 0;              //進化用のアイテム２
 
     bool evolution = false;          //進化を一度だけ実行する
     bool evolution2 = false;         //分岐進化を一度だけ実行する
@@ -26,7 +28,7 @@ public class charaevolution : MonoBehaviour
    
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
         if(BoxChara1.UpbringingChara1 >= 1)  //１以上だった場合キャラが表示される
         {

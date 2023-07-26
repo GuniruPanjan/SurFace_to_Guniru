@@ -5,6 +5,13 @@ using UnityEngine.UI;
 
 public class countDown : MonoBehaviour
 {
+
+    int rand;
+    public GameObject item1;
+    public GameObject item2;
+    public GameObject item3;
+    public GameObject item4;
+
     public Text timer;
     float CountDownTime;    // カウントダウン
     int num;
@@ -18,6 +25,9 @@ public class countDown : MonoBehaviour
         num = Random.Range(0, 100);     // 0～99をランダムに出す
 
         Debug.Log(num); // コンソールにランダムに出た数字を表示
+
+        rand = Random.Range(1, 100);  //1~100の範囲
+        Debug.Log(rand);
 
         CountDownTime = 10.0f;      //　カウントダウン開始秒数をセット
         //minute = CountDownTime / 60;
@@ -34,6 +44,58 @@ public class countDown : MonoBehaviour
         // 0.0秒になったらカウントダウンタイムを0.0で固定(止まったように見せる)
         if (CountDownTime <= 0.0f)
         {
+            if (rand < 30)
+            {
+                //1つ目
+                item1.SetActive(true);
+                if (rand < 10)
+                {
+                    item2.SetActive(true);
+
+                    if (rand < 5)
+                    {
+                        item3.SetActive(true);
+                    }
+                }
+
+            }
+            else if (rand < 60)
+            {
+                //2つ目
+                item2.SetActive(true);
+                if (rand < 40)
+                {
+                    item1.SetActive(true);
+
+                    if (rand < 35)
+                    {
+                        item3.SetActive(true);
+                    }
+                }
+
+            }
+            else if (rand < 90)
+            {
+                //3つ目
+                item3.SetActive(true);
+                if (rand < 70)
+                {
+                    item1.SetActive(true);
+
+                    if (rand < 65)
+                    {
+                        item2.SetActive(true);
+                    }
+                }
+
+
+            }
+            else if (rand < 100)
+            {
+                //4つ目
+                item4.SetActive(true);
+            }
+
             Debug.Log("終了");
             CountDownTime = 0.0f;
             if (num < 90)   // 90%の確率で死ぬ

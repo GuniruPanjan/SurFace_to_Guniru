@@ -6,7 +6,7 @@ using UnityEngine.SocialPlatforms.GameCenter;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class charaevolution : MonoBehaviour
+public class kabutoevolution : MonoBehaviour
 {
     [SerializeField] private GameObject a1 = GameObject.Find("キャラ1");
 
@@ -24,17 +24,17 @@ public class charaevolution : MonoBehaviour
     bool evolution = false;          //進化を一度だけ実行する
     bool evolution2 = false;         //分岐進化を一度だけ実行する
 
-    public GameObject chara2;
+    [SerializeField] public GameObject chara2;
    
 
     // Update is called once per frame
     void Update()
     {
-        if(BoxChara1.UpbringingChara1 >= 1)  //１以上だった場合キャラが表示される
+        if(kabuto.UpbringingChara1 >= 1)  //１以上だった場合キャラが表示される
         {
             a1.SetActive(!false);
         }
-        if(BoxChara1.UpbringingChara1 == 0)  //0以下だった場合キャラが非表示
+        if(kabuto.UpbringingChara1 == 0)  //0以下だった場合キャラが非表示
         {
             a1.SetActive(false);
         }

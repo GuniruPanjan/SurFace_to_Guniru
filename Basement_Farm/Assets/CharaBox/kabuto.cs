@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 
 
-public class BoxChara1 : MonoBehaviour
+public class kabuto : MonoBehaviour
 {
 
     public static int UpbringingChara1 = 0;  //育成シーンでCharaを表示させるための変数宣言
@@ -16,12 +17,8 @@ public class BoxChara1 : MonoBehaviour
 
     [SerializeField] private GameObject a = GameObject.Find("ゲーム1");
 
-    public void OnTouched()
-    {
-        UpbringingChara1 += 1;
-        Debug.Log("選んだな");
-    }
-    void Update()
+   
+    public void Update()
     {
        
         if (chara1Selection.Chara1 >= 1) //Chara1が1以上だった場合表示
@@ -33,6 +30,13 @@ public class BoxChara1 : MonoBehaviour
         if (chara1Selection.Chara1 == 0) //Chara1が1以下だった場合非表示
         {
             a.SetActive(false);
+        }
+
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            UpbringingChara1 += 1;
+            Debug.Log("Hello");
         }
         
 

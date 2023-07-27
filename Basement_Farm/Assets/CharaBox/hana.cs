@@ -6,7 +6,7 @@ using UnityEngine.SocialPlatforms.GameCenter;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class BoxChara3 : MonoBehaviour
+public class hana : MonoBehaviour
 {
     [SerializeField] private GameObject c = GameObject.Find("ƒQ[ƒ€ƒLƒƒƒ‰3");
 

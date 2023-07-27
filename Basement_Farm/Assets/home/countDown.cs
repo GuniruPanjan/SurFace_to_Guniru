@@ -7,6 +7,8 @@ public class countDown : MonoBehaviour
 {
 
     int rand;
+    public GameObject buttonstart;
+    public GameObject buttonget;
     public GameObject item1;
     public GameObject item2;
     public GameObject item3;
@@ -107,6 +109,14 @@ public class countDown : MonoBehaviour
             {
                 timer.text = "生還";    // 生きたことをテキストで表示
             }
+
+            // カウントダウンが終わったら開始ボタンが非表示
+            buttonstart.SetActive(false);
+
+            // カウントダウンが終わったら獲得ボタンが表示
+            buttonget.SetActive(true);
+
+
         }
         else
         {

@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class countDown : MonoBehaviour
 {
 
+    [SerializeField] public GameObject start;
+    [SerializeField] public GameObject reset;
+
     int rand;
     public GameObject item1;
     public GameObject item2;
@@ -44,6 +47,8 @@ public class countDown : MonoBehaviour
         // 0.0秒になったらカウントダウンタイムを0.0で固定(止まったように見せる)
         if (CountDownTime <= 0.0f)
         {
+
+
             if (rand < 30)
             {
                 //1つ目
@@ -107,6 +112,10 @@ public class countDown : MonoBehaviour
             {
                 timer.text = "生還";    // 生きたことをテキストで表示
             }
+
+            reset.SetActive(true);        // 獲得ボタンを表示
+            Destroy(start);                 // 開始ボタンを非表示
+
         }
         else
         {

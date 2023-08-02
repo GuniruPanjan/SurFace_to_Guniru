@@ -5005,6 +5005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "\u30AD\u30E3\u30E9\uFF11"
       objectReference: {fileID: 0}
+    - target: {fileID: 7538604504988746197, guid: 476991a4ff2af4b4aabd27b23907e0c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7538604504988746198, guid: 476991a4ff2af4b4aabd27b23907e0c7, type: 3}
       propertyPath: a1
       value: 

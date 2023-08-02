@@ -8,18 +8,18 @@ using UnityEngine.SceneManagement;
 
 public class kabutoevolution : MonoBehaviour
 {
-    [SerializeField] private GameObject a1 = GameObject.Find("キャラ1");
+    [SerializeField] GameObject Charakabuto;
 
 
 
     public static int chara1to2 = 0;    //分岐進化キャラ１の変数宣言
     public static int chara1to3 = 0;    //分岐進化キャラ２の変数宣言
 
-    [SerializeField] private GameObject chara1;
+    [SerializeField] public GameObject chara1;
 
     public int standard = 10;        //進化するアイテムの数
-    public int normal = 0;           //進化用のアイテム１
-    public int low = 0;              //進化用のアイテム２
+    public static int normal = 0;           //進化用のアイテム１
+    public static int low = 0;              //進化用のアイテム２
 
     bool evolution = false;          //進化を一度だけ実行する
     bool evolution2 = false;         //分岐進化を一度だけ実行する
@@ -32,11 +32,11 @@ public class kabutoevolution : MonoBehaviour
     {
         if(kabuto.UpbringingChara1 >= 1)  //１以上だった場合キャラが表示される
         {
-            a1.SetActive(!false);
+            GameObject chara1 = Instantiate(Charakabuto);
         }
         if(kabuto.UpbringingChara1 == 0)  //0以下だった場合キャラが非表示
         {
-            a1.SetActive(false);
+           
         }
 
 
@@ -65,7 +65,7 @@ public class kabutoevolution : MonoBehaviour
         }
        
 
-        if(normal == standard)       //一定数normalアイテムを与えて進化する
+        if(normalItem.normal == standard)       //一定数normalアイテムを与えて進化する
         {
             if(!evolution)
             {
@@ -84,7 +84,7 @@ public class kabutoevolution : MonoBehaviour
             }
             
         }
-        if(low == standard)          //一定数lowアイテムを与えて進化する
+        if(lowItem.low == standard)          //一定数lowアイテムを与えて進化する
         {
             if(!evolution2)
             {

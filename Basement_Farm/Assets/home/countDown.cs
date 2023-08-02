@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class countDown : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class countDown : MonoBehaviour
         if (CountDownTime <= 0.0f)
         {
 
+            SceneManager.LoadScene("getScene");
 
             if (rand < 30)
             {
@@ -105,7 +107,7 @@ public class countDown : MonoBehaviour
             CountDownTime = 0.0f;
             if (num < 90)   // 90%の確率で死ぬ
             {
-                timer.text = "殉職";    // 死んだことをテキストで表示
+                timer.text = "殉職";
                 Destroy(sankaku);       // オブジェクトを消滅
             }
             else    // 10%の確率で生きる
@@ -113,9 +115,7 @@ public class countDown : MonoBehaviour
                 timer.text = "生還";    // 生きたことをテキストで表示
             }
 
-            reset.SetActive(true);        // 獲得ボタンを表示
             Destroy(start);                 // 開始ボタンを非表示
-
         }
         else
         {

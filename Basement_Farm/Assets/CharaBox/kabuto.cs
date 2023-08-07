@@ -1,4 +1,3 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,16 +6,10 @@ using UnityEngine.SocialPlatforms.GameCenter;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
-
 public class kabuto : MonoBehaviour
 {
 
-    public static int UpbringingChara1 = 0;  //育成シーンでCharaを表示させるための変数宣言
-   public static int Home1 = 0;
-
     [SerializeField] private GameObject a = GameObject.Find("ゲーム1");
-
    
     public void Update()
     {
@@ -33,22 +26,7 @@ public class kabuto : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButtonDown(0)) //右クリック
-        {
-            UpbringingChara1 += 1;
-            Debug.Log("Hello");
-        }
-
-
-        if (Input.GetMouseButtonDown(1)) //右クリック
-        {
-            Home1 += 1;
-            Debug.Log("Hello");
-        }
-
     }
 
-
-
-
+    
 }

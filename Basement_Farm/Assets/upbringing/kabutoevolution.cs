@@ -30,14 +30,6 @@ public class kabutoevolution : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(kabuto.UpbringingChara1 >= 1)  //１以上だった場合キャラが表示される
-        {
-            GameObject chara1 = Instantiate(Charakabuto);
-        }
-        if(kabuto.UpbringingChara1 == 0)  //0以下だった場合キャラが非表示
-        {
-           
-        }
 
 
         for(int i = 0;i < standard;i++)

@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class eye : MonoBehaviour
 {
-    public static int UpbringingChara2 = 0;  
 
     [SerializeField] private GameObject b = GameObject.Find("ゲームキャラ2");
 
@@ -24,12 +23,6 @@ public class eye : MonoBehaviour
         if (chara2Selection.Chara2 == 0) //Chara1が1以下だった場合非表示
         {
             b.SetActive(false);
-        }
-
-        if(Input.GetMouseButtonDown(0))
-        {
-            UpbringingChara2 += 1;
-            Debug.Log("選ばれた");
         }
 
 

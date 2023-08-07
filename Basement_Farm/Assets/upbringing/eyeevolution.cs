@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class eyeevolution : MonoBehaviour
 {
-    [SerializeField] private GameObject b1 = GameObject.Find("キャラ1");
+    [SerializeField]  GameObject CharaEye;
 
 
 
@@ -30,14 +30,6 @@ public class eyeevolution : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (eye.UpbringingChara2 >= 1)  //１以上だった場合キャラが表示される
-        {
-            b1.SetActive(!false);
-        }
-        if (eye.UpbringingChara2 == 0)  //0以下だった場合キャラが非表示
-        {
-            b1.SetActive(false);
-        }
 
 
         for (int i = 0; i < standard; i++)
@@ -65,7 +57,7 @@ public class eyeevolution : MonoBehaviour
         }
 
 
-        if (normal == standard)       //一定数normalアイテムを与えて進化する
+        if (normalItem.normal == standard)       //一定数normalアイテムを与えて進化する
         {
             if (!evolution)
             {
@@ -84,7 +76,7 @@ public class eyeevolution : MonoBehaviour
             }
 
         }
-        if (low == standard)          //一定数lowアイテムを与えて進化する
+        if (lowItem.low == standard)          //一定数lowアイテムを与えて進化する
         {
             if (!evolution2)
             {

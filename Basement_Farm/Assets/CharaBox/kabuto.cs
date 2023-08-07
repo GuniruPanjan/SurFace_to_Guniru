@@ -11,8 +11,6 @@ using UnityEngine.SceneManagement;
 
 public class kabuto : MonoBehaviour
 {
-
-    public static int UpbringingChara1 = 0;  //育成シーンでCharaを表示させるための変数宣言
   
 
     [SerializeField] private GameObject a = GameObject.Find("ゲーム1");
@@ -30,13 +28,6 @@ public class kabuto : MonoBehaviour
         if (chara1Selection.Chara1 == 0) //Chara1が1以下だった場合非表示
         {
             a.SetActive(false);
-        }
-
-
-        if (Input.GetMouseButtonDown(0)) //右クリック
-        {
-            UpbringingChara1 += 1;
-            Debug.Log("Hello");
         }
 
 

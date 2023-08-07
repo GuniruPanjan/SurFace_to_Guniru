@@ -13,7 +13,7 @@ public class kabuto : MonoBehaviour
 {
 
     public static int UpbringingChara1 = 0;  //育成シーンでCharaを表示させるための変数宣言
-   public static int Home1 = 0;
+  
 
     [SerializeField] private GameObject a = GameObject.Find("ゲーム1");
 
@@ -40,11 +40,7 @@ public class kabuto : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButtonDown(1)) //右クリック
-        {
-            Home1 += 1;
-            Debug.Log("Hello");
-        }
+       
 
     }
 

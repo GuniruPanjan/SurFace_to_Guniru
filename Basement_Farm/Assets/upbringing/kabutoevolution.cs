@@ -54,9 +54,9 @@ public class kabutoevolution : MonoBehaviour
                 }
             }
         }
-       
 
-        if(normalItem.normal == standard)       //一定数normalアイテムを与えて進化する
+        //normalItem.
+        if (normal == standard)       //一定数normalアイテムを与えて進化する
         {
             if(!evolution)
             {
@@ -67,7 +67,7 @@ public class kabutoevolution : MonoBehaviour
 
                 //GameObject chara2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-                Instantiate(chara2,new Vector3(0.0f,0.0f,0.0f), Quaternion.identity);
+                //Instantiate(chara2,new Vector3(0.0f,0.0f,0.0f), Quaternion.identity);
 
                 chara1Selection.Chara1 -= 1;
 
@@ -75,7 +75,8 @@ public class kabutoevolution : MonoBehaviour
             }
             
         }
-        if(lowItem.low == standard)          //一定数lowアイテムを与えて進化する
+        //lowItem.
+        if (low == standard)          //一定数lowアイテムを与えて進化する
         {
             if(!evolution2)
             {
@@ -85,6 +86,8 @@ public class kabutoevolution : MonoBehaviour
                 Destroy(gameObject);
 
                 //GameObject chara3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+
+                //Instantiate(chara1, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
 
                 chara1Selection.Chara1 -= 1;
 

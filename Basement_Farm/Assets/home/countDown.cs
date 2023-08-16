@@ -11,13 +11,13 @@ public class countDown : MonoBehaviour
     [SerializeField] public GameObject reset;
 
     int rand;
+    int monster = 0;
 
     public Text timer;      // テキストタイマー
     float CountDownTime;    // カウントダウン
     int num;
 
-    [SerializeField] GameObject sankaku;
-
+    [SerializeField] GameObject mons;
 
     // Start is called before the first frame update
     void Start()
@@ -37,21 +37,22 @@ public class countDown : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //経過時刻を引いていく
         CountDownTime -= Time.deltaTime;
 
 
-        // 0.0秒になったらカウントダウンタイムを0.0で固定(止まったように見せる)
-        if (CountDownTime <= 0.0f)
-        {
-            SceneManager.LoadScene("getScene");
-        }
-        else
-        {
-            //カウントダウンタイム整形して表示
-            timer.text = string.Format("{0:00}秒", CountDownTime);
-            Debug.Log(CountDownTime);
-        }
+            // 0.0秒になったらカウントダウンタイムを0.0で固定(止まったように見せる)
+            if (CountDownTime <= 0.0f)
+            {
+                SceneManager.LoadScene("getScene");
+            }
+            else
+            {
+                //カウントダウンタイム整形して表示
+                timer.text = string.Format("{0:00}秒", CountDownTime);
+                Debug.Log(CountDownTime);
+            }
 
     }
 }

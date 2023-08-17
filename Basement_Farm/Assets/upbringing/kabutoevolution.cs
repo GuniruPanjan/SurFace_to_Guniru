@@ -10,6 +10,10 @@ public class kabutoevolution : MonoBehaviour
 {
     [SerializeField] GameObject Charakabuto;
 
+    [SerializeField] GameObject Kurage;
+
+    [SerializeField] GameObject Yadokari;
+
 
 
     public static int chara1to2 = 0;    //•ªŠòi‰»ƒLƒƒƒ‰‚P‚Ì•Ï”éŒ¾
@@ -71,6 +75,8 @@ public class kabutoevolution : MonoBehaviour
 
                 chara1Selection.Chara1 -= 1;
 
+                Kurage.SetActive(!false);
+
                 chara1to2 += 1;
             }
             
@@ -90,6 +96,8 @@ public class kabutoevolution : MonoBehaviour
                 //Instantiate(chara1, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
 
                 chara1Selection.Chara1 -= 1;
+
+                Yadokari.SetActive(!false);
 
                 chara1to3 += 1;
                 

@@ -22,6 +22,7 @@ public class pushActive : MonoBehaviour
     public void OneClick()
     {
         btn.interactable = false;
+        // ‚­‚¸
     }
 
 }

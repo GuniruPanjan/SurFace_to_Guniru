@@ -13,7 +13,7 @@ public class kabuto : MonoBehaviour
 {
   
 
-    [SerializeField] private GameObject a = GameObject.Find("ÉQÅ[ÉÄ1");
+    [SerializeField] private GameObject a;
 
    
     public void Update()

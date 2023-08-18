@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class countDown : MonoBehaviour
 {
-
     [SerializeField] public GameObject start;
     [SerializeField] public GameObject reset;
 
@@ -16,19 +15,10 @@ public class countDown : MonoBehaviour
     float CountDownTime;    // カウントダウン
     int num;
 
-    [SerializeField] GameObject sankaku;
-
 
     // Start is called before the first frame update
     void Start()
     {
-        num = Random.Range(0, 100);     // 0～99をランダムに出す
-
-        Debug.Log(num); // コンソールにランダムに出た数字を表示
-
-        rand = Random.Range(1, 100);  //1~100の範囲
-        Debug.Log(rand);
-
         CountDownTime = 10.0f;      //　カウントダウン開始秒数をセット
         //minute = CountDownTime / 60;
         timer = GetComponent<Text>();
@@ -54,4 +44,5 @@ public class countDown : MonoBehaviour
         }
 
     }
+
 }

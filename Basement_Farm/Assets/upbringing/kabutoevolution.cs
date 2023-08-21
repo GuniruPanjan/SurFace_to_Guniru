@@ -19,16 +19,10 @@ public class kabutoevolution : MonoBehaviour
     public static int chara1to2 = 0;    //分岐進化キャラ１の変数宣言
     public static int chara1to3 = 0;    //分岐進化キャラ２の変数宣言
 
-    [SerializeField] public GameObject chara1;
-
     public int standard = 10;        //進化するアイテムの数
     public static int normal = 0;           //進化用のアイテム１
     public static int low = 0;              //進化用のアイテム２
 
-    bool evolution = false;          //進化を一度だけ実行する
-    bool evolution2 = false;         //分岐進化を一度だけ実行する
-
-    [SerializeField] public GameObject chara2;
    
 
     // Update is called once per frame
@@ -39,6 +33,8 @@ public class kabutoevolution : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.A)) //Aキーを入力するとnormalのアイテムが与えられる
             {
+                Debug.Log("こんにちは");
+                
                 if (normal < 10)      //10になるまでnormalのアイテムが与えられる
                 {
                     normal++;
@@ -52,6 +48,7 @@ public class kabutoevolution : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.B))  //Bキーを入力するとlowアイテムが与えられる
             {
+               
                 if (low < 10)         //10になるまでlowのアイテムが与えられる
                 {
                     low++;
@@ -60,48 +57,39 @@ public class kabutoevolution : MonoBehaviour
         }
 
         //normalItem.
-        if (normal == standard)       //一定数normalアイテムを与えて進化する
+        if (normalItem.normal >= standard)       //一定数normalアイテムを与えて進化する
         {
-            if(!evolution)
-            {
-                evolution = true;
-                Debug.Log("A進化した！");
+            Debug.Log("A進化した！");
 
-                Destroy(gameObject);
+            Charakabuto.SetActive(false);
 
-                //GameObject chara2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            //GameObject chara2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-                //Instantiate(chara2,new Vector3(0.0f,0.0f,0.0f), Quaternion.identity);
+            //Instantiate(chara2,new Vector3(0.0f,0.0f,0.0f), Quaternion.identity);
 
-                chara1Selection.Chara1 -= 1;
+            chara1Selection.Chara1 -= 1;
 
-                Kurage.SetActive(!false);
+            Kurage.SetActive(!false);
 
-                chara1to2 += 1;
-            }
-            
+            chara1to2 += 1;
+
         }
         //lowItem.
-        if (low == standard)          //一定数lowアイテムを与えて進化する
+        if (lowItem.low >= standard)          //一定数lowアイテムを与えて進化する
         {
-            if(!evolution2)
-            {
-                evolution2 = true;
-                Debug.Log("B進化した!");
+            Debug.Log("B進化した!");
 
-                Destroy(gameObject);
+            Charakabuto.SetActive(false);
 
-                //GameObject chara3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            //GameObject chara3 = GameObject.CreatePrimitive(PrimitiveType.Cube);
 
-                //Instantiate(chara1, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
+            //Instantiate(chara1, new Vector3(0.0f, 0.0f, 0.0f), Quaternion.identity);
 
-                chara1Selection.Chara1 -= 1;
+            chara1Selection.Chara1 -= 1;
 
-                Yadokari.SetActive(!false);
+            Yadokari.SetActive(!false);
 
-                chara1to3 += 1;
-                
-            }
+            chara1to3 += 1;
         }
         
     }

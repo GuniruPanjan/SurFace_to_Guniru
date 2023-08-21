@@ -2091,6 +2091,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 782345630}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255844641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5144,6 +5156,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1204858485}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 178209287}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -8348,11 +8372,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d9285a68623dca4fa73acb228575dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: {fileID: 178209287}
   monster001: {fileID: 255844638}
   monster002: {fileID: 2010495424}
   monster003: {fileID: 1203970669}
   monster004: {fileID: 1312013576}
   monster005: {fileID: 1025279844}
+  monster006: {fileID: 196905628}
+  monster007: {fileID: 1802650250}
+  monster008: {fileID: 1993358544}
+  monster009: {fileID: 1198365409}
+  monster010: {fileID: 963990813}
+  monster011: {fileID: 1612626255}
+  monster012: {fileID: 1963076507}
+  monster013: {fileID: 1327598764}
+  monster014: {fileID: 31513477}
+  monster015: {fileID: 1755976432}
+  monster016: {fileID: 1639686905}
+  monster017: {fileID: 1660904334}
+  monster018: {fileID: 307885137}
+  monster019: {fileID: 193791100}
+  monster020: {fileID: 1819758945}
+  monster021: {fileID: 100860443}
+  monster022: {fileID: 672966498}
+  monster023: {fileID: 55468955}
+  monster024: {fileID: 1341160724}
+  monster025: {fileID: 1633775713}
+  monster026: {fileID: 328722809}
+  monster027: {fileID: 1548877365}
+  monster028: {fileID: 22678680}
+  monster029: {fileID: 373661380}
+  monster030: {fileID: 1204858485}
 --- !u!4 &1288091048
 Transform:
   m_ObjectHideFlags: 0
@@ -8481,6 +8531,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: PushActive, Assembly-CSharp
         m_MethodName: OneClick
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 782345630}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9431,6 +9493,31 @@ MonoBehaviour:
   monster003: {fileID: 1203970669}
   monster004: {fileID: 1312013576}
   monster005: {fileID: 1025279844}
+  monster006: {fileID: 196905628}
+  monster007: {fileID: 1802650250}
+  monster008: {fileID: 1993358544}
+  monster009: {fileID: 1198365409}
+  monster010: {fileID: 963990813}
+  monster011: {fileID: 1612626255}
+  monster012: {fileID: 1963076507}
+  monster013: {fileID: 1327598764}
+  monster014: {fileID: 31513477}
+  monster015: {fileID: 1755976432}
+  monster016: {fileID: 1639686905}
+  monster017: {fileID: 1660904334}
+  monster018: {fileID: 307885137}
+  monster019: {fileID: 193791100}
+  monster020: {fileID: 1819758945}
+  monster021: {fileID: 100860443}
+  monster022: {fileID: 672966498}
+  monster023: {fileID: 55468955}
+  monster024: {fileID: 1341160724}
+  monster025: {fileID: 1633775713}
+  monster026: {fileID: 328722809}
+  monster027: {fileID: 1548877365}
+  monster028: {fileID: 22678680}
+  monster029: {fileID: 373661380}
+  monster030: {fileID: 1204858485}
 --- !u!4 &1521450868
 Transform:
   m_ObjectHideFlags: 0

@@ -20,6 +20,21 @@ public class GetGenerator : MonoBehaviour
     public GameObject character6;
     public GameObject character7;
     public GameObject character8;
+    public GameObject character9;
+
+    public static int item01 = 0;
+    public static int item02 = 0;
+    public static int item03 = 0;
+    public static int item04 = 0;
+    public static int Chara1 = 0;
+    public static int Chara2 = 0;
+    public static int Chara3 = 0;
+    public static int Chara4 = 0;
+    public static int Chara5 = 0;
+    public static int Chara6 = 0;
+    public static int Chara7 = 0;
+    public static int Chara8 = 0;
+    public static int Chara9 = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +44,7 @@ public class GetGenerator : MonoBehaviour
         rand = Random.Range(1, 100);  //1~100‚Ì”ÍˆÍ
         Debug.Log(rand);
 
-        ran = Random.Range(1, 80);
+        ran = Random.Range(1, 90);
         Debug.Log(ran);
 
         
@@ -42,13 +57,17 @@ public class GetGenerator : MonoBehaviour
         {
             //1‚Â–Ú
             item1.SetActive(true);
+            item01++;
+
             if (rand < 10)
             {
                 item2.SetActive(true);
+                item02++;
 
                 if (rand < 5)
                 {
                     item3.SetActive(true);
+                    item03++;
                 }
             }
 
@@ -57,13 +76,17 @@ public class GetGenerator : MonoBehaviour
         {
             //2‚Â–Ú
             item2.SetActive(true);
+            item02++;
+
             if (rand < 40)
             {
                 item1.SetActive(true);
+                item01++;
 
                 if (rand < 35)
                 {
                     item3.SetActive(true);
+                    item03++;
                 }
             }
 
@@ -72,13 +95,17 @@ public class GetGenerator : MonoBehaviour
         {
             //3‚Â–Ú
             item3.SetActive(true);
+            item03++;
+
             if (rand < 70)
             {
                 item1.SetActive(true);
+                item01++;
 
                 if (rand < 65)
                 {
                     item2.SetActive(true);
+                    item02++;
                 }
             }
 
@@ -88,6 +115,7 @@ public class GetGenerator : MonoBehaviour
         {
             //4‚Â–Ú
             item4.SetActive(true);
+            item04++;
         }
 
 
@@ -95,34 +123,47 @@ public class GetGenerator : MonoBehaviour
         if (ran < 10)
         {
             character1.SetActive(true);
+            Chara1 += 1;
         }
         else if (ran < 20)
         {
             character2.SetActive(true);
+            Chara2 += 1;
         }
         else if(ran < 30)
         {
             character3.SetActive(true);
+            Chara3 += 1;
         }
         else if(ran < 40)
         {
             character4.SetActive(true);
+            Chara4 += 1;
         }
         else if(ran < 50)
         {
             character5.SetActive(true);
+            Chara5 += 1;
         }
         else if(ran < 60)
         {
             character6.SetActive(true);
+            Chara6 += 1;
         }
         else if(ran < 70)
         {
             character7.SetActive(true);
+            Chara7 += 1;
         }
         else if(ran < 80)
         {
             character8.SetActive(true);
+            Chara8 += 1;
+        }
+        else if(ran < 90)
+        {
+            character9.SetActive(true);
+            Chara9 += 1;
         }
         
     }

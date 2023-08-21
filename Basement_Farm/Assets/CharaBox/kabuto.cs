@@ -29,13 +29,13 @@ public class kabuto : MonoBehaviour
         {
             a.SetActive(false);
         }
-
-
-       
-
+        if(GetGenerator.Chara1 >= 1)
+        {
+            a.SetActive(!false);
+        }
+        if(GetGenerator.Chara1 == 0)
+        {
+            a.SetActive(false);
+        }
     }
-
-
-
-
 }

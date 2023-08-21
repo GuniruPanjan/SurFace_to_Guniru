@@ -6,17 +6,31 @@ public class GetGenerator : MonoBehaviour
 {
 
     int rand;
+    int ran;
 
     public GameObject item1;
     public GameObject item2;
     public GameObject item3;
     public GameObject item4;
+    public GameObject character1;
+    public GameObject character2;
+    public GameObject character3;
+    public GameObject character4;
+    public GameObject character5;
+    public GameObject character6;
+    public GameObject character7;
+    public GameObject character8;
 
     // Start is called before the first frame update
     void Start()
     {
+
+
         rand = Random.Range(1, 100);  //1~100‚Ì”ÍˆÍ
         Debug.Log(rand);
+
+        ran = Random.Range(1, 80);
+        Debug.Log(ran);
 
         
     }
@@ -75,5 +89,41 @@ public class GetGenerator : MonoBehaviour
             //4‚Â–Ú
             item4.SetActive(true);
         }
+
+
+        //ƒ‚ƒ“ƒXƒ^[‚ÌŠl“¾
+        if (ran < 10)
+        {
+            character1.SetActive(true);
+        }
+        else if (ran < 20)
+        {
+            character2.SetActive(true);
+        }
+        else if(ran < 30)
+        {
+            character3.SetActive(true);
+        }
+        else if(ran < 40)
+        {
+            character4.SetActive(true);
+        }
+        else if(ran < 50)
+        {
+            character5.SetActive(true);
+        }
+        else if(ran < 60)
+        {
+            character6.SetActive(true);
+        }
+        else if(ran < 70)
+        {
+            character7.SetActive(true);
+        }
+        else if(ran < 80)
+        {
+            character8.SetActive(true);
+        }
+        
     }
 }

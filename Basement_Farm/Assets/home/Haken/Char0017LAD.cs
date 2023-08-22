@@ -18,12 +18,12 @@ public class Char017LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Char017.CharCount017 >= 1)
+        if (Kaoevolution.kao2 >= 1)
         {
             if (rand < 50)
             {
 
-                chara17Selection.Chara17 -= 1;
+                Kaoevolution.kao2 -= 1;
 
                 Debug.Log("€‚Ê");
 

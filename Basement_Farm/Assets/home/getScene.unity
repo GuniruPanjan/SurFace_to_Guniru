@@ -2035,9 +2035,9 @@ MonoBehaviour:
   item3: {fileID: 736505466}
   item4: {fileID: 1096956945}
   character1: {fileID: 1947637816}
-  character2: {fileID: 366894570}
-  character3: {fileID: 2078684225}
-  character4: {fileID: 2034461412}
+  character2: {fileID: 2078684225}
+  character3: {fileID: 2034461412}
+  character4: {fileID: 366894570}
   character5: {fileID: 723080711}
   character6: {fileID: 1712392423}
   character7: {fileID: 601108091}

@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AI : MonoBehaviour
+{
+    [SerializeField] private GameObject a;
+
+
+    public void Update()
+    {
+
+        if (Eye2Evolution.ai >= 1) //Chara1‚ª1ˆÈã‚¾‚Á‚½ê‡•\¦
+        {
+
+            a.SetActive(!false);
+
+        }
+        if (Eye2Evolution.ai == 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
+        {
+            a.SetActive(false);
+        }
+
+    }
+}

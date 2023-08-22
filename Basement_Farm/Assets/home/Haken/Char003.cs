@@ -28,4 +28,5 @@ public class Char003 : MonoBehaviour
             char003.SetActive(false);
         }
     }
+
 }

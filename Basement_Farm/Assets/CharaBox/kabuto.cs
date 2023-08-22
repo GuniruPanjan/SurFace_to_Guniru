@@ -15,6 +15,8 @@ public class kabuto : MonoBehaviour
 
     [SerializeField] private GameObject a;
 
+    public static int ka = 0;
+
    
     public void Update()
     {

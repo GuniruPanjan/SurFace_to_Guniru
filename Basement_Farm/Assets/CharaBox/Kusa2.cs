@@ -10,13 +10,13 @@ public class Kusa2 : MonoBehaviour
     public void Update()
     {
 
-        if (KusaEvolution.kusa >= 1) //Chara1が1以上だった場合表示
+        if (KusaEvolution.kusa2 >= 1) //Chara1が1以上だった場合表示
         {
 
             a.SetActive(!false);
 
         }
-        if (KusaEvolution.kusa == 0) //Chara1が1以下だった場合非表示
+        if (KusaEvolution.kusa2 == 0) //Chara1が1以下だった場合非表示
         {
             a.SetActive(false);
         }

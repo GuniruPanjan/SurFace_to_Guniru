@@ -17,13 +17,13 @@ public class Chara027 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GetGenerator.Chara8 >= 1) //Chara1が1以上だった場合表示
+        if (taiji.Chara8 >= 1) //Chara1が1以上だった場合表示
         {
 
             char027.SetActive(!false);
 
         }
-        if (GetGenerator.Chara8 == 0) //Chara1が1以下だった場合非表示
+        if (taiji.Chara8 == 0) //Chara1が1以下だった場合非表示
         {
             char027.SetActive(false);
         }

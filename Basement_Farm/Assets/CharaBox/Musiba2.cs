@@ -10,13 +10,13 @@ public class Musiba2 : MonoBehaviour
     public void Update()
     {
 
-        if (Musibaevolution.musiba >= 1) //Chara1が1以上だった場合表示
+        if (Musibaevolution.musiba2 >= 1) //Chara1が1以上だった場合表示
         {
 
             a.SetActive(!false);
 
         }
-        if (Musibaevolution.musiba == 0) //Chara1が1以下だった場合非表示
+        if (Musibaevolution.musiba2 == 0) //Chara1が1以下だった場合非表示
         {
             a.SetActive(false);
         }

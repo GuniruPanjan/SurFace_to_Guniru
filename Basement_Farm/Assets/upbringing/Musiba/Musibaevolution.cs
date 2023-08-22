@@ -8,7 +8,7 @@ public class Musibaevolution : MonoBehaviour
 
     [SerializeField] GameObject Musiba2;
 
-    public static int musiba;
+    public static int musiba2;
 
     public int standard = 10;
 
@@ -20,11 +20,11 @@ public class Musibaevolution : MonoBehaviour
 
             Musiba.SetActive(false);
 
-            GetGenerator.Chara6 -= 1;
+            musiba.Chara6 -= 1;
 
             Musiba2.SetActive(!false);
 
-            musiba += 1;
+            musiba2 += 1;
 
             highMusiba.high = 0;
 

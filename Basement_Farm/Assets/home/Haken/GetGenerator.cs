@@ -27,11 +27,11 @@ public class GetGenerator : MonoBehaviour
     public static int item03 = 0;
     public static int item04 = 0;
    
-    public static int Chara4 = 0;
-    public static int Chara5 = 0;
-    public static int Chara6 = 0;
-    public static int Chara7 = 0;
-    public static int Chara8 = 0;
+    //public static int Chara4 = 0;
+    //public static int Chara5 = 0;
+    //public static int Chara6 = 0;
+    //public static int Chara7 = 0;
+    //public static int Chara8 = 0;
     public static int Chara9 = 0;
 
     // Start is called before the first frame update
@@ -137,27 +137,27 @@ public class GetGenerator : MonoBehaviour
         else if (ran < 40)
         {
             character2.SetActive(true);
-            Chara4 += 1;
+            hirusuke.Chara4 += 1;
         }
         else if(ran < 50)
         {
             character5.SetActive(true);
-            Chara5 += 1;
+            kao.Chara5 += 1;
         }
         else if(ran < 60)
         {
             character6.SetActive(true);
-            Chara6 += 1;
+            musiba.Chara6 += 1;
         }
         else if(ran < 70)
         {
             character7.SetActive(true);
-            Chara7 += 1;
+            kusa.Chara7 += 1;
         }
         else if(ran < 80)
         {
             character8.SetActive(true);
-            Chara8 += 1;
+            taiji.Chara8 += 1;
         }
         else if(ran < 90)
         {

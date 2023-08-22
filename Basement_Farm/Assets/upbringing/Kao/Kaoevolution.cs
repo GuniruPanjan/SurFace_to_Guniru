@@ -20,7 +20,7 @@ public class Kaoevolution : MonoBehaviour
 
             Kao.SetActive(false);
 
-            GetGenerator.Chara5 -= 1;
+            kao.Chara5 -= 1;
 
             Kao2.SetActive(!false);
 

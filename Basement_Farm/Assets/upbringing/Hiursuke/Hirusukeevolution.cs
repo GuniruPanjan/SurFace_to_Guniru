@@ -23,7 +23,7 @@ public class Hirusukeevolution : MonoBehaviour
 
             Hirusuke.SetActive(false);
 
-            GetGenerator.Chara4 -= 1;
+            hirusuke.Chara4 -= 1;
 
             Hiruku.SetActive(!false);
 
@@ -39,7 +39,7 @@ public class Hirusukeevolution : MonoBehaviour
 
             Hirusuke.SetActive(false);
 
-            GetGenerator.Chara4 -= 1;
+            hirusuke.Chara4 -= 1;
 
             Hirunadesu.SetActive(!false);
 

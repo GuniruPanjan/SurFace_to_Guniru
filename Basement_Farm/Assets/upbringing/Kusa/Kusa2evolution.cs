@@ -20,7 +20,7 @@ public class Kusa2evolution : MonoBehaviour
 
             Kusa.SetActive(false);
 
-            KusaEvolution.kusa -= 1;
+            KusaEvolution.kusa2 -= 1;
 
             Kusa2.SetActive(!false);
 

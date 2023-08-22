@@ -8,7 +8,7 @@ public class KusaEvolution : MonoBehaviour
 
     [SerializeField] GameObject Kusa2;
 
-    public static int kusa;
+    public static int kusa2;
 
     public int standard = 10;
 
@@ -20,11 +20,11 @@ public class KusaEvolution : MonoBehaviour
 
             Kusa.SetActive(false);
 
-            GetGenerator.Chara7 -= 1;
+            kusa.Chara7 -= 1;
 
             Kusa2.SetActive(!false);
 
-            kusa += 1;
+            kusa2 += 1;
 
             normalKusa.normal = 0;
 

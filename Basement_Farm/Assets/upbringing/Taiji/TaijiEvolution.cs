@@ -30,7 +30,7 @@ public class TaijiEvolution : MonoBehaviour
 
             Taiji.SetActive(false);
 
-            GetGenerator.Chara8 -= 1;
+            taiji.Chara8 -= 1;
 
             Sito.SetActive(!false);
 
@@ -46,7 +46,7 @@ public class TaijiEvolution : MonoBehaviour
 
             Taiji.SetActive(false);
 
-            GetGenerator.Chara8 -= 1;
+            taiji.Chara8 -= 1;
 
             Tuki.SetActive(!false);
 

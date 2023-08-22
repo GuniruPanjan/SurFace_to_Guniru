@@ -17,13 +17,13 @@ public class Chara011 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (KusaEvolution.kusa >= 1) //Chara1が1以上だった場合表示
+        if (KusaEvolution.kusa2 >= 1) //Chara1が1以上だった場合表示
         {
 
             char011.SetActive(!false);
 
         }
-        if (KusaEvolution.kusa == 0) //Chara1が1以下だった場合非表示
+        if (KusaEvolution.kusa2 == 0) //Chara1が1以下だった場合非表示
         {
             char011.SetActive(false);
         }

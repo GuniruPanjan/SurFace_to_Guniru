@@ -20,7 +20,7 @@ public class Musiba2Evolution : MonoBehaviour
 
             Musiba.SetActive(false);
 
-            Musibaevolution.musiba -= 1;
+            Musibaevolution.musiba2 -= 1;
 
             Musiba2.SetActive(!false);
 

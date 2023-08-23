@@ -18,12 +18,12 @@ public class Char024LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Musibaevolution.musiba2 >= 1)
+        if (Chara024.CharCount024 >= 1)
         {
             if (rand < 50)
             {
 
-                Musibaevolution.musiba2 -= 1;
+                musiba.Chara6 -= 1;
 
                 Debug.Log("€‚Ê");
 

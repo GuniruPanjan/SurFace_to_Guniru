@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Char017LAD : MonoBehaviour
+public class Char021LAD : MonoBehaviour
 {
-    [SerializeField] private GameObject char017;
+    [SerializeField] private GameObject char021;
 
     public int rand;
 
@@ -18,23 +18,23 @@ public class Char017LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Kaoevolution.kao2 >= 1)
+        if (Chara021.CharCount021 >= 1)
         {
             if (rand < 50)
             {
 
-                Kaoevolution.kao2 -= 1;
+                Bakuteriaevolution.bagu -= 1;
 
                 Debug.Log("€‚Ê");
 
-                char017.SetActive(false);
+                char021.SetActive(false);
 
             }
             else
             {
 
                 Debug.Log("¶‚«‚é");
-                char017.SetActive(!false);
+                char021.SetActive(!false);
 
 
             }
@@ -42,7 +42,7 @@ public class Char017LAD : MonoBehaviour
         }
         else
         {
-            char017.active = false;
+            char021.active = false;
         }
     }
 }

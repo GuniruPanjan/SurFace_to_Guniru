@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class musiba : MonoBehaviour
 {
-    public static int Chara6 = 0;
-
+    
     [SerializeField] private GameObject a;
 
+    public static int Chara6 = 0;
 
     public void Update()
     {

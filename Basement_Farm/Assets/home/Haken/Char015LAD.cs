@@ -18,12 +18,12 @@ public class Char015LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rareHirusuke.rare >= 1)
+        if (Chara015.CharCount015 >= 1)
         {
             if (rand < 50)
             {
 
-                rareHirusuke.rare -= 1;
+                Hirusukeevolution.hirunann -= 1;
 
                 Debug.Log("€‚Ê");
 

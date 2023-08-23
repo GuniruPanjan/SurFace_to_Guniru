@@ -18,7 +18,7 @@ public class Char019LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GetGenerator.Chara9 >= 1)
+        if (Chara019.CharCount019 >= 1)
         {
             if (rand < 50)
             {

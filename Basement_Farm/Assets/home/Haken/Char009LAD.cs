@@ -18,7 +18,7 @@ public class Char009LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (EyeEvolution.eye2 >= 1)
+        if (Chara009.CharCount009 >= 1)
         {
             if (rand < 50)
             {

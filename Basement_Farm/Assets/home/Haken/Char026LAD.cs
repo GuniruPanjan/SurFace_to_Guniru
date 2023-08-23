@@ -18,7 +18,7 @@ public class Char026LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Musiba2Evolution.musi >= 1)
+        if (Chara026.CharCount026 >= 1)
         {
             if (rand < 50)
             {

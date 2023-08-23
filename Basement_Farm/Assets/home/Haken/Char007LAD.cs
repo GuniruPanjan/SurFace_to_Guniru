@@ -18,7 +18,7 @@ public class Char007LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Hanaevolution.hana2 >= 1)
+        if (Chara007.CharCount007 >= 1)
         {
             if (rand < 50)
             {

@@ -18,7 +18,7 @@ public class Char013LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hirusuke.Chara4 >= 1)
+        if (Chara013.CharCount013 >= 1)
         {
             if (rand < 50)
             {

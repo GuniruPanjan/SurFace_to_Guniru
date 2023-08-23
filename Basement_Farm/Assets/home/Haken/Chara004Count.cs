@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chara4Count : MonoBehaviour
+public class Chara004Count : MonoBehaviour
 {
     public void Onclick()
     {

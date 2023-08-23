@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Char0010LAD : MonoBehaviour
+public class Char010LAD : MonoBehaviour
 {
     [SerializeField] private GameObject char010;
 
@@ -18,7 +18,7 @@ public class Char0010LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Hana2evolution.hana3 >= 1)
+        if (Chara010.CharCount010 >= 1)
         {
             if (rand < 50)
             {

@@ -18,9 +18,10 @@ public class kusa : MonoBehaviour
             a.SetActive(!false);
 
         }
-        if (Chara7 == 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
+        if (Chara7 <= 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
         {
-            a.SetActive(false);
+            Debug.Log("‘");
+            Destroy(this.gameObject);
         }
 
 

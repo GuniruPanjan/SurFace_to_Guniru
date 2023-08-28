@@ -24,9 +24,10 @@ public class EyeEvolution : MonoBehaviour
 
             Eye2.SetActive(!false);
 
+            eye2 += 1;
+
             highEye.high = 0;
 
-            eye2 += 1;
 
 
         }

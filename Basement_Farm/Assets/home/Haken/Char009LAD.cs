@@ -25,7 +25,7 @@ public class Char009LAD : MonoBehaviour
 
                 EyeEvolution.eye2 -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("AIŽ€‚Ê");
 
                 char009.SetActive(false);
 

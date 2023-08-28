@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class hana : MonoBehaviour
 {
-    [SerializeField] private GameObject c = GameObject.Find("ゲームキャラ3");
+    [SerializeField] private GameObject c;
 
     void Update()
     {
@@ -19,9 +19,10 @@ public class hana : MonoBehaviour
             c.SetActive(!false);
 
         }
-        if (chara3Selection.Chara3 == 0) //Chara1が1以下だった場合非表示
+        if (chara3Selection.Chara3 <= 0) //Chara1が1以下だった場合非表示
         {
-            c.SetActive(false);
+            Debug.Log("花");
+            Destroy(this.gameObject);
         }
 
 

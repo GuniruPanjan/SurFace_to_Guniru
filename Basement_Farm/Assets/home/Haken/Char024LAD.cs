@@ -25,7 +25,7 @@ public class Char024LAD : MonoBehaviour
 
                 Musibaevolution.musiba2 -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("’ŽŽ•Ž€‚Ê");
 
                 char024.SetActive(false);
 

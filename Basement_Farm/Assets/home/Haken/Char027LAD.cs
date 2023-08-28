@@ -25,7 +25,7 @@ public class Char027LAD : MonoBehaviour
 
                 Faceevolution.face -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("‘ÙŽ™Ž€‚Ê");
 
                 char027.SetActive(false);
 

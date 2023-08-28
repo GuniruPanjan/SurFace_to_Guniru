@@ -46,21 +46,20 @@ public class GetGenerator : MonoBehaviour
         Debug.Log(ran);
 
         
-    }
+    
 
     // Update is called once per frame
-    void Update()
-    {
+    
         if (rand < 30)
         {
             //1‚Â–Ú
             item1.SetActive(true);
-            item01 += 1;
+            item01 += 10;
 
             if (rand < 10)
             {
                 item2.SetActive(true);
-                item02 += 1;
+                item02 += 5;
 
                 if (rand < 5)
                 {
@@ -74,7 +73,7 @@ public class GetGenerator : MonoBehaviour
         {
             //2‚Â–Ú
             item2.SetActive(true);
-            item02 += 1;
+            item02 += 10;
 
             if (rand < 40)
             {
@@ -84,7 +83,7 @@ public class GetGenerator : MonoBehaviour
                 if (rand < 35)
                 {
                     item3.SetActive(true);
-                    item03 += 1;
+                    item03 += 5;
                 }
             }
 
@@ -93,12 +92,12 @@ public class GetGenerator : MonoBehaviour
         {
             //3‚Â–Ú
             item3.SetActive(true);
-            item03 += 1;
+            item03 += 10;
 
             if (rand < 70)
             {
                 item1.SetActive(true);
-                item01 += 1;
+                item01 += 5;
 
                 if (rand < 65)
                 {
@@ -122,47 +121,56 @@ public class GetGenerator : MonoBehaviour
         {
             character1.SetActive(true);
             chara1Selection.Chara1 += 1;
+            Debug.Log(chara1Selection.Chara1);
         }
       
         else if(ran < 20)
         {
             character3.SetActive(true);
             chara2Selection.Chara2 += 1;
+            Debug.Log(chara2Selection.Chara2);
         }
         else if(ran < 30)
         {
             character4.SetActive(true);
             chara3Selection.Chara3 += 1;
+            Debug.Log(chara3Selection.Chara3);
         }
         else if (ran < 40)
         {
             character2.SetActive(true);
             hirusuke.Chara4 += 1;
+            Debug.Log(hirusuke.Chara4);
         }
         else if(ran < 50)
         {
             character5.SetActive(true);
             kao.Chara5 += 1;
+            Debug.Log(kao.Chara5);
         }
         else if(ran < 60)
         {
             character6.SetActive(true);
             musiba.Chara6 += 1;
+            Debug.Log(musiba.Chara6);
         }
         else if(ran < 70)
         {
             character7.SetActive(true);
             kusa.Chara7 += 1;
+            Debug.Log(kusa.Chara7);
         }
         else if(ran < 80)
         {
             character8.SetActive(true);
             taiji.Chara8 += 1;
+            Debug.Log(taiji.Chara8);
         }
         else if(ran < 90)
         {
             character9.SetActive(true);
             Chara9 += 1;
+            Debug.Log(Chara9);
         }
         
     }

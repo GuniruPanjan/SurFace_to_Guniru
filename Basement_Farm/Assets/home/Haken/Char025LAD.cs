@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Char015LAD : MonoBehaviour
+public class Char025LAD : MonoBehaviour
 {
-    [SerializeField] private GameObject char015;
+    [SerializeField] private GameObject char025;
 
     public int rand;
 
@@ -18,23 +18,23 @@ public class Char015LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rareHirusuke.rare >= 1)
+        if (Chara025.CharCount025 >= 1)
         {
             if (rand < 50)
             {
 
-                rareHirusuke.rare -= 1;
+                Musibaevolution.musiba2 -= 1;
 
-                Debug.Log("ƒqƒ‹ƒiƒ“ƒfƒX€‚Ê");
+                Debug.Log("’•2€‚Ê");
 
-                char015.SetActive(false);
+                char025.SetActive(false);
 
             }
             else
             {
 
                 Debug.Log("¶‚«‚é");
-                char015.SetActive(!false);
+                char025.SetActive(!false);
 
 
             }
@@ -42,7 +42,7 @@ public class Char015LAD : MonoBehaviour
         }
         else
         {
-            char015.active = false;
+            char025.active = false;
         }
     }
 }

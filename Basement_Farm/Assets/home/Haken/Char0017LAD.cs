@@ -25,7 +25,7 @@ public class Char017LAD : MonoBehaviour
 
                 Kaoevolution.kao2 -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("Šç2Ž€‚Ê");
 
                 char017.SetActive(false);
 

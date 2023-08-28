@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class eye : MonoBehaviour
 {
 
-    [SerializeField] private GameObject b = GameObject.Find("ゲームキャラ2");
+    [SerializeField] private GameObject b;
 
     public void Update()
     {
@@ -20,9 +20,10 @@ public class eye : MonoBehaviour
             b.SetActive(!false);
 
         }
-        if (chara2Selection.Chara2 == 0) //Chara1が1以下だった場合非表示
+        if (chara2Selection.Chara2 <= 0) //Chara1が1以下だった場合非表示
         {
-            b.SetActive(false);
+            Debug.Log("目");
+            Destroy(this.gameObject);
         }
 
 

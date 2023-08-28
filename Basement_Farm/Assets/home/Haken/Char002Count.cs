@@ -11,7 +11,7 @@ public class Char002Count : MonoBehaviour
     }
     public void Onclick()
     {
-        Char002.CharCount002 += 1;
+        Char002.CharCount002 = 1;
         Debug.Log(Char002.CharCount002);
     }
 

@@ -18,9 +18,10 @@ public class kao : MonoBehaviour
             a.SetActive(!false);
 
         }
-        if (Chara5 == 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
+        if (Chara5 <= 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
         {
-            a.SetActive(false);
+            Debug.Log("Šç");
+            Destroy(this.gameObject);
         }
 
 

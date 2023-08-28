@@ -18,9 +18,10 @@ public class hirusuke : MonoBehaviour
             a.SetActive(!false);
 
         }
-        if (Chara4 == 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
+        if (Chara4 <= 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
         {
-            a.SetActive(false);
+            Debug.Log("’‹•");
+            Destroy(this.gameObject);
         }
 
 

@@ -25,7 +25,7 @@ public class Char019LAD : MonoBehaviour
 
                 GetGenerator.Chara9 -= 1;
 
-                Debug.Log("死ぬ");
+                Debug.Log("オールバクテリア死ぬ");
 
                 char019.SetActive(false);
 

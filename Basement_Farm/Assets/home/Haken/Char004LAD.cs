@@ -25,7 +25,7 @@ public class Char004LAD : MonoBehaviour
 
                 kabutoevolution.chara1to2 -= 1;
 
-                Debug.Log("€‚Ê");
+                Debug.Log("ƒQ[ƒ€ƒLƒƒƒ‰2€‚Ê");
 
                 char004.SetActive(false);
 

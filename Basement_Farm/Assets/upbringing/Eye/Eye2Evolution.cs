@@ -24,9 +24,10 @@ public class Eye2Evolution : MonoBehaviour
 
             AI.SetActive(!false);
 
-            highEye2.high = 0;
 
             ai += 1;
+
+            highEye2.high = 0;
         }
     }
 }

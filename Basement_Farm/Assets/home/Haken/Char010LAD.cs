@@ -25,7 +25,7 @@ public class Char0010LAD : MonoBehaviour
 
                 Hana2evolution.hana3 -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("‰Ô3Ž€‚Ê");
 
                 char010.SetActive(false);
 

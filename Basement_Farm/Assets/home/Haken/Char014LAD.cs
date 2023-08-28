@@ -25,7 +25,7 @@ public class Char014LAD : MonoBehaviour
 
                 normalHirusuke.normal -= 1;
 
-                Debug.Log("€‚Ê");
+                Debug.Log("ƒqƒ‹[ƒN€‚Ê");
 
                 char014.SetActive(false);
 

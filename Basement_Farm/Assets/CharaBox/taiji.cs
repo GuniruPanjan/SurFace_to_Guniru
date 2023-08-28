@@ -18,9 +18,10 @@ public class taiji : MonoBehaviour
             a.SetActive(!false);
 
         }
-        if (Chara8 == 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
+        if (Chara8 <= 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
         {
-            a.SetActive(false);
+            Debug.Log("‘Ù™");
+            Destroy(this.gameObject);
         }
 
 

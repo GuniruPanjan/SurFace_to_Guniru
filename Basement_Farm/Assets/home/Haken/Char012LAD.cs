@@ -25,7 +25,7 @@ public class Char012LAD : MonoBehaviour
 
                 Kusa2evolution.kusa3 -= 1;
 
-                Debug.Log("€‚Ê");
+                Debug.Log("‘3€‚Ê");
 
                 char012.SetActive(false);
 

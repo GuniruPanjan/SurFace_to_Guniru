@@ -16,9 +16,10 @@ public class bakuteria : MonoBehaviour
             a.SetActive(!false);
 
         }
-        if (GetGenerator.Chara9 == 0) //Chara1が1以下だった場合非表示
+        if (GetGenerator.Chara9 <= 0) //Chara1が1以下だった場合非表示
         {
-            a.SetActive(false);
+            Debug.Log("バクテリア");
+            Destroy(this.gameObject);
         }
 
 

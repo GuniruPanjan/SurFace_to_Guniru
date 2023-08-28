@@ -25,7 +25,7 @@ public class Char001LAD : MonoBehaviour
 
                 chara1Selection.Chara1 -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("ƒJƒuƒgŽ€‚Ê");
 
                 char001.SetActive(false);
 

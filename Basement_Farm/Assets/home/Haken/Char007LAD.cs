@@ -25,7 +25,7 @@ public class Char007LAD : MonoBehaviour
 
                 Hanaevolution.hana2 -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("ƒJƒGƒ‹Ž€‚Ê");
 
                 char007.SetActive(false);
 

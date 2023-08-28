@@ -25,7 +25,7 @@ public class Char016LAD : MonoBehaviour
 
                 kao.Chara5 -= 1;
 
-                Debug.Log("Ž€‚Ê");
+                Debug.Log("Šç1Ž€‚Ê");
 
                 char016.SetActive(false);
 

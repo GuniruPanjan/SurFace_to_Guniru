@@ -27,9 +27,10 @@ public class kabuto : MonoBehaviour
             a.SetActive(!false);
 
         }
-        if (chara1Selection.Chara1 == 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
+        if (chara1Selection.Chara1 <= 0) //Chara1‚ª1ˆÈ‰º‚¾‚Á‚½ê‡”ñ•\¦
         {
-            a.SetActive(false);
+            Debug.Log("Š•");
+            Destroy(this.gameObject);
         }
 
        

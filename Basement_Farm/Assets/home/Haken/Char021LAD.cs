@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Char015LAD : MonoBehaviour
+public class Char021LAD : MonoBehaviour
 {
-    [SerializeField] private GameObject char015;
+    [SerializeField] private GameObject char021;
 
     public int rand;
 
@@ -18,23 +18,23 @@ public class Char015LAD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rareHirusuke.rare >= 1)
+        if (Chara021.CharCount021 >= 1)
         {
             if (rand < 50)
             {
 
-                rareHirusuke.rare -= 1;
+                Bakuteriaevolution.bagu -= 1;
 
-                Debug.Log("ヒルナンデス死ぬ");
+                Debug.Log("バグリタス死ぬ");
 
-                char015.SetActive(false);
+                char021.SetActive(false);
 
             }
             else
             {
 
                 Debug.Log("生きる");
-                char015.SetActive(!false);
+                char021.SetActive(!false);
 
 
             }
@@ -42,7 +42,7 @@ public class Char015LAD : MonoBehaviour
         }
         else
         {
-            char015.active = false;
+            char021.active = false;
         }
     }
 }
